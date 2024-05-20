@@ -1,0 +1,120 @@
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link href='https://fonts.googleapis.com/css?family=Manrope' rel='stylesheet'>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Manrope';
+      }
+
+      /* CSS */
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      th,
+      td {
+        border: none;
+        padding: 10px;
+        white-space: nowrap;
+      }
+
+      th {
+        background-color: #f0f0f0;
+      }
+
+      .product-image {
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+      }
+
+      .stock-status {
+        width: 80px;
+        height: 30px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        padding: 2px;
+        background-color: #D2F0D4;
+        border-radius: 5px;
+      }
+
+      .in-stock {
+        color: #2C742F;
+      }
+
+      .out-of-stock {
+        color: #EA4B48;
+      }
+
+      button {
+        background-color: #4caF50;
+        color: #fff;
+        border: none;
+        padding: 15px 45px;
+        font-size: 16px;
+        border-radius: 50px;
+      }
+
+      /* Adjustable cell widths */
+      .product-cell {
+        width: 40%;
+      }
+
+      .price-cell {
+        width: 20%;
+      }
+
+      .stock-status-cell {
+        width: 20%;
+      }
+
+      .button-cell {
+        width: 20%;
+      }
+
+      /* Adjustable row heights */
+      .adjustable-row {
+        height: 100px; /* adjust as needed */
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th class="product-cell">Product</th>
+          <th class="price-cell">Price</th>
+          <th class="stock-status-cell">Stock Status</th>
+          <th class="button-cell"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="adjustable-row">
+          <td class="product-cell">
+            <img src="product-image.jpg" alt="Product Image">
+            <span>Product Name</span>
+          </td>
+          <td class="price-cell">$19.99</td>
+          <td class="stock-status-cell">
+            <div class="stock-status">
+              <span class="in-stock">In Stock</span>
+            </div>
+          </td>
+          <td class="button-cell">
+            <button>Add to Cart</button>
+          </td>
+        </tr>
+        <!-- Add more table rows as needed -->
+      </tbody>
+    </table>
+  </body>
+</html>
